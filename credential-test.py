@@ -12,6 +12,7 @@ class TestCredential(unittest.TestCase):
         Set up method to run before each test case
         '''
         # Create credential object
+        
         self.new_credential = Credential("fiona","gmail","gmail2020")
 
     def tearDown(self):
