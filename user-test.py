@@ -1,4 +1,5 @@
 import unittest # Importing the unittest module
+
 from user import User # Importing the user class
 
 class TestUser(unittest.TestCase):
@@ -7,4 +8,4 @@ class TestUser(unittest.TestCase):
     Args:
         unittest.TestCase : Test case class that helps create test cases
     '''
-    
+
