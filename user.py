@@ -23,7 +23,7 @@ class User:
         '''
         User.user_list.append(self)
 
-         @classmethod
+    @classmethod
     def find_credential(cls, name):
         '''
         Method that checks if Credentials is imported correctly
@@ -38,7 +38,7 @@ class User:
                 return True
 
         return False
- @classmethod
+    @classmethod
     def log_in(cls, name, password):
         '''
         Method that allows a user to log into their credential
@@ -55,7 +55,7 @@ class User:
                 return Credential.credential_list
 
         return False
- @classmethod
+    @classmethod
     def display_user(cls):
         '''
         Method that returns the user list
@@ -63,7 +63,7 @@ class User:
         
         return cls.user_list
 
-        @classmethod
+    @classmethod
     def user_exist(cls, name):
         '''
         Method that checks if a user exists in the user list
@@ -76,7 +76,7 @@ class User:
             
         '''
         
-         for user in cls.user_list:
+        for user in cls.user_list:
             if user.user_name == name:
                 return True
             
