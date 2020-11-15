@@ -85,6 +85,7 @@ class TestCredential(unittest.TestCase):
         test_credential.save_credential()
 
         # use contact exist method
+        
         credential_exists = Credential.credential_exist("gmail")
         
         self.assertTrue(credential_exists)
