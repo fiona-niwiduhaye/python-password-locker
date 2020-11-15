@@ -19,13 +19,14 @@ class Credential:
         self.credential_name = credential_name
         self.credential_password = credential_password
 
-         def save_credential(self):
+    def save_credential(self):
         '''
         Method that saves a user's credentials to credential list
         '''
         Credential.credential_list.append(self)
 @classmethod
-    def display_credential(cls,password):
+def display_credential(cls,password):
+
         '''
         Method that returns the credential list
         Args:
@@ -40,8 +41,8 @@ class Credential:
         return user_credential_list
 
 
-    @classmethod
-    def credential_exist(cls, name):
+@classmethod
+def credential_exist(cls, name):
         
         '''
         Method that checks if a credential exists in the credential list
