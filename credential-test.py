@@ -52,6 +52,15 @@ class TestCredential(unittest.TestCase):
         test_credential.save_credential()
 
         self.assertEqual( len(Credential.credential_list), 2)
+         def test_generate_password(self):
+        '''
+        Test case to test if a user can log into their credentials
+        '''
+        
+        generated_password = self.new_credential.generate_password()
+
+        self.assertEqual( len(generated_password), 8 )   
+    
  
     def test_display_credential(self):
         '''
@@ -85,7 +94,7 @@ class TestCredential(unittest.TestCase):
         test_credential.save_credential()
 
         # use contact exist method
-        
+
         credential_exists = Credential.credential_exist("gmail")
         
         self.assertTrue(credential_exists)
